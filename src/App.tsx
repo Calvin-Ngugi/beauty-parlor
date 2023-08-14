@@ -1,6 +1,10 @@
+import MainContainer from "./Components/MainContainer"
+
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <MainContainer />
+    </div>
   )
 }
 
