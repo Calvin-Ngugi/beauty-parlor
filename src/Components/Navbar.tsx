@@ -4,12 +4,24 @@ const Navbar = () => {
       <div className="font-bold text-[20px]">LUNAR SPA</div>
       <div>
         <ul className="flex gap-3">
-          <li className="text-[18px] hover:underline cursor-pointer hover:text-purple-400 hover:font-semibold">HOME</li>
-          <li className="text-[18px] hover:underline cursor-pointer hover:text-purple-400 hover:font-semibold">SERVICES</li>
-          <li className="text-[18px] hover:underline cursor-pointer hover:text-purple-400 hover:font-semibold">PORTFOLIO</li>
-          <li className="text-[18px] hover:underline cursor-pointer hover:text-purple-400 hover:font-semibold">BLOG</li>
-          <li className="text-[18px] hover:underline cursor-pointer hover:text-purple-400 hover:font-semibold">SKILLS</li>
-          <li className="text-[18px] hover:underline cursor-pointer hover:text-purple-400 hover:font-semibold">CONTACT</li>
+          <li className="text-[18px] hover:underline cursor-pointer hover:text-purple-400 hover:font-semibold">
+            <a href="/">HOME</a>
+          </li>
+          <li className="text-[18px] hover:underline cursor-pointer hover:text-purple-400 hover:font-semibold">
+            <a href="#services">SERVICES</a>
+          </li>
+          <li className="text-[18px] hover:underline cursor-pointer hover:text-purple-400 hover:font-semibold">
+            <a href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li className="text-[18px] hover:underline cursor-pointer hover:text-purple-400 hover:font-semibold">
+            <a href="#blog">BLOG</a>
+          </li>
+          <li className="text-[18px] hover:underline cursor-pointer hover:text-purple-400 hover:font-semibold">
+            <a href="#skills">SKILLS</a>
+          </li>
+          <li className="text-[18px] hover:underline cursor-pointer hover:text-purple-400 hover:font-semibold">
+            <a href="#contact">CONTACT</a>
+          </li>
         </ul>
       </div>
     </div>
