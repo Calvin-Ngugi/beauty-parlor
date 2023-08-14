@@ -1,4 +1,4 @@
-import MainContainer from "./Components/MainContainer"
+import MainContainer from "./components/MainContainer"
 
 const App = () => {
   return (
