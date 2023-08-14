@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import grid from "assets/"
 
 function Grid() {
   return (
-    <div>Grid</div>
+    <div>sd</div>
   )
 }
 
