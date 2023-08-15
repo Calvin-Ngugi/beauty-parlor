@@ -2,6 +2,7 @@ import { useState } from "react";
 import MobileNav from "./MobileNav";
 import Navbar from "./Navbar";
 import { GiPlayButton } from "react-icons/gi";
+import InfoSection from "./InfoSection";
 
 const Header = () => {
   const [isMenu, setIsMenu] = useState(false);
@@ -9,7 +10,7 @@ const Header = () => {
     setIsMenu(!isMenu);
   };
   return (
-    <div className="bg-[url('header-img.jpg')] bg-center bg-cover min-h-screen text-white mb-64">
+    <div className="bg-[url('header-img.jpg')] bg-center bg-cover min-h-screen text-white md:mb-64">
       <Navbar />
       <MobileNav
         isMenu={isMenu}
@@ -27,6 +28,9 @@ const Header = () => {
           alias
         </p>
         <GiPlayButton className="text-[40px] text-pink-300" />
+      </div>
+      <div className="md:block hidden">
+        <InfoSection />
       </div>
     </div>
   );
