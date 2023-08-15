@@ -18,9 +18,9 @@ const MobileNav: React.FC<MobileNavProps> = ({
         <BiMenuAltRight />
       </div>
       {isMenu && (
-        <div className="bg-green-600 w-[90%] h-[90%] shadow-xl flex flex-col rounded-lg fixed top-11 left-5">
+        <div className="bg-green-600 w-[100%] h-[100%] shadow-xl flex flex-col fixed top-0 left-0">
           <button
-            className="mt-4 text-[40px] right-6 top-4 absolute"
+            className="mt-2 text-[40px] right-6 top-4 absolute"
             onClick={() => setIsMenu(false)}
           >
             <IoClose />

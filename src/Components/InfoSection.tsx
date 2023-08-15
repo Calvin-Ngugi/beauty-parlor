@@ -1,6 +1,6 @@
 const InfoSection = () => {
   return (
-    <div className="relative md:absolute md:-bottom-36 md:right-0 bg-fuchsia-600 md:w-[45rem] w-[100%] h-[45%] text-white">
+    <div className="md:absolute md:-bottom-36 md:right-0 bg-fuchsia-600 md:w-[45rem] w-[100%] h-[45%] text-white">
       <div className="pt-20 pe-10 ps-20 pb-20">
         <div className="grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-y-7">
           <div className="flex flex-col">
