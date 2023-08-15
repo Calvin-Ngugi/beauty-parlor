@@ -1,6 +1,7 @@
 import Header from "./Header";
 import InfoSection from "./InfoSection";
 import Services from "./Services";
+import Grid from "./Grid";
 
 const MainContainer = () => {
   return (
@@ -10,6 +11,7 @@ const MainContainer = () => {
         <InfoSection />
       </div>
       <Services />
+      <Grid />
     </div>
   );
 };
