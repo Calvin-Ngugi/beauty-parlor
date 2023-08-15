@@ -14,7 +14,7 @@ const Services = () => {
         id="services"
       >
         <div className="hidden md:block">
-          <Title value="services" />
+          <Title value="SERVICES" />
         </div>
         <div className="flex flex-col p-6 pb-10">
           <div className=" flex flex-col items-center">
