@@ -1,7 +1,7 @@
 const Grid = () => {
   return (
-    <div className="container mx-auto">
-      <div className="grid grid-cols-3 gap-2 p-20 bg-yellow-200 lg:grid-rows-2">
+    <div className="  max-w-screen">
+      <div className="grid grid-cols-3 gap-2 p-20 bg-green-500 lg:grid-rows-2 w-[100%]">
         <div className="w-full rounded">
           <img src='banner.jpg'alt="banner" className="cover" />
         </div>
