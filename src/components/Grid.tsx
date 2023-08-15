@@ -1,7 +1,7 @@
 const Grid = () => {
   return (
     <div className="  max-w-screen">
-      <div className="grid grid-cols-3 gap-2 p-20 bg-green-500 lg:grid-rows-2 w-[100%]">
+      <div className="grid grid-cols-3 gap-2 lg:p-20 md:p-10 p-2 bg-green-500 lg:grid-rows-2 w-[100%]">
         <div className="w-full rounded">
           <img src='banner.jpg'alt="banner" className="cover" />
         </div>
