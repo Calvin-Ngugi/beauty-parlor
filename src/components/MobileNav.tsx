@@ -42,6 +42,18 @@ const MobileNav: React.FC<MobileNavProps> = ({
               className="cursor-pointer hover:font-medium hover:underline"
               onClick={() => setIsMenu(false)}
             >
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li
+              className="cursor-pointer hover:font-medium hover:underline"
+              onClick={() => setIsMenu(false)}
+            >
+              <a href="#blog">Blog</a>
+            </li>
+            <li
+              className="cursor-pointer hover:font-medium hover:underline"
+              onClick={() => setIsMenu(false)}
+            >
               <a href="#skills">Skills</a>
             </li>
             <li
