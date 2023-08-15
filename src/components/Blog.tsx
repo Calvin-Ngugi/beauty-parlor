@@ -18,40 +18,59 @@ const Blog = () => {
           <div className=" flex flex-col items-center">
             <img src="barber.jpg" alt="manicure" />
           </div>
-          <h1 className="text-pink-500 text-[32px] font-bold sm:mt-7">Barber</h1>
+          <h1 className="text-fuchsia-700 text-[32px] font-bold sm:mt-7">
+            Barber
+          </h1>
           <p className="mt-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
             corrupti iste quaerat vel nemo, officiis eligendi eum placeat
             molestiae voluptatem sunt libero aut ad voluptates accusantium
             quasi, esse tempora laboriosam.
           </p>
-          <GiPlayButton className="text-[40px] text-pink-500 mt-10" />
+          <div className="flex items-center text-[40px] text-fuchsia-700 mt-10">
+            <GiPlayButton />
+            <p className="text-[20px] ms-10 text-black font-light">
+              Contact Us
+            </p>
+          </div>
         </div>
         <div className="flex flex-col pb-10">
           <div className=" flex flex-col items-center">
             <img src="manicure.jpg" alt="pedicure" />
           </div>
-          <h1 className="text-pink-500 text-[32px] font-bold sm:mt-7">Manicure</h1>
+          <h1 className="text-fuchsia-700 text-[32px] font-bold sm:mt-7">
+            Manicure
+          </h1>
           <p className="mt-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
             corrupti iste quaerat vel nemo, officiis eligendi eum placeat
             molestiae voluptatem sunt libero aut ad voluptates accusantium
             quasi, esse tempora laboriosam.
           </p>
-          <GiPlayButton className="text-[40px] text-pink-500 mt-10" />
+          <div className="flex items-center text-[40px] text-fuchsia-700 mt-10">
+            <GiPlayButton />
+            <p className="text-[20px] ms-10 text-black font-light">
+              Contact Us
+            </p>
+          </div>
         </div>
         <div className="flex flex-col pb-10">
           <div className=" flex flex-col items-center">
-            <img src="products.jpg" alt="barber"/>
+            <img src="products.jpg" alt="barber" />
           </div>
-          <h1 className="text-pink-500 text-[32px] font-bold">Beauty</h1>
+          <h1 className="text-fuchsia-700 text-[32px] font-bold">Beauty</h1>
           <p className="mt-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
             corrupti iste quaerat vel nemo, officiis eligendi eum placeat
             molestiae voluptatem sunt libero aut ad voluptates accusantium
             quasi, esse tempora laboriosam.
           </p>
-          <GiPlayButton className="text-[40px] text-pink-500 mt-10" />
+          <div className="flex items-center text-[40px] text-fuchsia-700 mt-10">
+            <GiPlayButton />
+            <p className="text-[20px] ms-10 text-black font-light">
+              Contact Us
+            </p>
+          </div>
         </div>
       </div>
     </div>
