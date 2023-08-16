@@ -1,8 +1,9 @@
 import Title from "./Title";
+import { BsEnvelopeOpenFill } from "react-icons/bs";
 
 function Contact() {
   return (
-    <div className="mt-10 2xl:min-h-[34rem] min-h-[30rem]">
+    <div className="mt-16 2xl:min-h-[37rem] min-h-[30rem]">
       <h1 className="md:hidden text-purple-800 text-[40px] font-semibold text-center mb-5">
         Contact
       </h1>
@@ -10,20 +11,22 @@ function Contact() {
         className="md:w-[90%] grid md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 items-center md:ms-0 md:me-0 xs:gap-5 mb-5"
         id="contact"
       >
-        <div className="hidden md:block">
+        <div className="hidden md:block mt-36">
           <Title value="CONTACT" />
         </div>
-        <div className="Contact_title">
-          <p>stay in touch with me</p>
-          <h2>quick contact</h2>
+        <div className="text-[24px] text-slate-200 font-extrabold bg-fuchsia-700 ps-2 sm:h-[100%] sm:pb-0 sm:pt-0 pb-10 pt-5 sm:w-[100%] w-screen flex flex-col justify-center gap-8">
+          <p>Stay in touch with us:</p>
+          <div className="flex items-center gap-2">
+            <h2>Write us a message:</h2>
+            <BsEnvelopeOpenFill />
+          </div>
         </div>
 
-        <div className="contact_data">
-          <h4>Just to say hi !!</h4>
-          <p>
+        <div className="col-span-2">
+          <p className="mb-5">
             If you have any questions simply use the following contact details.
           </p>
-          <div>
+          <div className="mb-5">
             <p>
               <strong>Address:</strong> Alliance Tower 1st floor, Naivas area
               along Naivas road, besides Almasi building, Kilifi, Kenya ,
