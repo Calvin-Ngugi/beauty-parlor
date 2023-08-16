@@ -29,7 +29,7 @@ const Blog = () => {
           </p>
           <div className="flex items-center text-[40px] text-fuchsia-700 mt-10">
             <GiPlayButton />
-            <p className="text-[20px] ms-10 text-black font-light">
+            <p className="text-[20px] ms-5 text-black font-light">
               Contact Us
             </p>
           </div>
@@ -49,7 +49,7 @@ const Blog = () => {
           </p>
           <div className="flex items-center text-[40px] text-fuchsia-700 mt-10">
             <GiPlayButton />
-            <p className="text-[20px] ms-10 text-black font-light">
+            <p className="text-[20px] ms-5 text-black font-light">
               Contact Us
             </p>
           </div>
@@ -67,7 +67,7 @@ const Blog = () => {
           </p>
           <div className="flex items-center text-[40px] text-fuchsia-700 mt-10">
             <GiPlayButton />
-            <p className="text-[20px] ms-10 text-black font-light">
+            <p className="text-[20px] ms-5 text-black font-light">
               Contact Us
             </p>
           </div>
