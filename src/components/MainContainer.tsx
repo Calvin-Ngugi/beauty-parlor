@@ -3,6 +3,7 @@ import InfoSection from "./InfoSection";
 import Services from "./Services";
 import Grid from "./Grid";
 import Blog from "./Blog";
+import Testimonials from "./Testimonials";
 
 const MainContainer = () => {
   return (
@@ -14,6 +15,7 @@ const MainContainer = () => {
       <Services />
       <Grid />
       <Blog />
+      <Testimonials />
     </div>
   );
 };
