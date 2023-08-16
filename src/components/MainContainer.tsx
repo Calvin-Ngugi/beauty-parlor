@@ -5,6 +5,7 @@ import Grid from "./Grid";
 import Blog from "./Blog";
 import Testimonials from "./Testimonials";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 const MainContainer = () => {
   return (
@@ -18,6 +19,7 @@ const MainContainer = () => {
       <Blog />
       <Testimonials />
       <Contact />
+      <Footer/>
     </div>
   );
 };
