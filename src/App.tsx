@@ -1,6 +1,12 @@
+import MainContainer from "./components/MainContainer"
+import ScrollToTop from "./components/ScrollToTop"
+
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <MainContainer />
+      <ScrollToTop />
+    </div>
   )
 }
 
