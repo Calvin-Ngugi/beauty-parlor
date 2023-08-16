@@ -10,10 +10,10 @@ const Services = () => {
         Services
       </h1>
       <div
-        className="md:w-[90%] grid md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 items-center md:ms-0 md:me-0 sm:gap-5 mb-5"
+        className="md:w-[90%] grid md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 items-center md:ms-0 md:me-0 mb-5"
         id="services"
       >
-        <div className="hidden md:block">
+        <div className="hidden md:block row-span-2">
           <Title value="SERVICES" />
         </div>
         <div className="flex flex-col p-6 pb-10">
@@ -21,7 +21,7 @@ const Services = () => {
             <FaLeaf className="text-[80px] text-purple-700" />
           </div>
           <small className="font-semibold mt-10 text-[12px]">01</small>
-          <h1 className="text-pink-500 text-[32px] font-bold">Blowout</h1>
+          <h1 className="text-pink-500 text-[32px] font-bold">Hair Services</h1>
           <p className="mt-12">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
             corrupti iste quaerat vel nemo, officiis eligendi eum placeat
@@ -35,7 +35,7 @@ const Services = () => {
             <PiFlowerLotus className="text-[80px] text-white" />
           </div>
           <small className="font-semibold mt-10 text-[12px]">02</small>
-          <h1 className="text-pink-500 text-[32px] font-bold">Olaplex</h1>
+          <h1 className="text-pink-500 text-[32px] font-bold">Skin care</h1>
           <p className="mt-12">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
             corrupti iste quaerat vel nemo, officiis eligendi eum placeat
@@ -49,7 +49,7 @@ const Services = () => {
             <FaHeart className="text-[80px] text-purple-700" />
           </div>
           <small className="font-semibold mt-10 text-[12px]">03</small>
-          <h1 className="text-pink-500 text-[32px] font-bold">Retouch</h1>
+          <h1 className="text-pink-500 text-[32px] font-bold">Nail Art /Acrylics</h1>
           <p className="mt-12">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
             corrupti iste quaerat vel nemo, officiis eligendi eum placeat
@@ -57,6 +57,48 @@ const Services = () => {
             quasi, esse tempora laboriosam.
           </p>
           <GiPlayButton className="text-[40px] text-pink-500 mt-10" />
+        </div>
+        <div className="flex flex-col bg-slate-900 text-white p-6 pb-10">
+          <div className=" flex flex-col items-center">
+            <PiFlowerLotus className="text-[80px] text-white" />
+          </div>
+          <small className="font-semibold mt-10 text-[12px]">04</small>
+          <h1 className="text-pink-500 text-[32px] font-bold">Treatment</h1>
+          <p className="mt-12">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            corrupti iste quaerat vel nemo, officiis eligendi eum placeat
+            molestiae voluptatem sunt libero aut ad voluptates accusantium
+            quasi, esse tempora laboriosam.
+          </p>
+          <GiPlayButton className="text-[40px] text-white mt-10" />
+        </div>
+        <div className="flex flex-col p-6 pb-10">
+          <div className=" flex flex-col items-center">
+            <FaHeart className="text-[80px] text-purple-700" />
+          </div>
+          <small className="font-semibold mt-10 text-[12px]">05</small>
+          <h1 className="text-pink-500 text-[32px] font-bold">Massage</h1>
+          <p className="mt-12">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            corrupti iste quaerat vel nemo, officiis eligendi eum placeat
+            molestiae voluptatem sunt libero aut ad voluptates accusantium
+            quasi, esse tempora laboriosam.
+          </p>
+          <GiPlayButton className="text-[40px] text-pink-500 mt-10" />
+        </div>
+        <div className="flex flex-col bg-slate-900 text-white p-6 pb-10">
+          <div className=" flex flex-col items-center">
+            <PiFlowerLotus className="text-[80px] text-white" />
+          </div>
+          <small className="font-semibold mt-10 text-[12px]">06</small>
+          <h1 className="text-pink-500 text-[32px] font-bold">Waxing</h1>
+          <p className="mt-12">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            corrupti iste quaerat vel nemo, officiis eligendi eum placeat
+            molestiae voluptatem sunt libero aut ad voluptates accusantium
+            quasi, esse tempora laboriosam.
+          </p>
+          <GiPlayButton className="text-[40px] text-white mt-10" />
         </div>
       </div>
     </div>
