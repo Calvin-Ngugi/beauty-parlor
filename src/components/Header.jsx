@@ -12,7 +12,7 @@ const Header = () => {
     setIsMenu(!isMenu);
   };
   return (
-    <div className="bg-[url('header-img.jpg')] bg-slate-900 bg-center bg-cover min-h-screen text-white md:mb-44 mb-0">
+    <div className=" bg-slate-900 bg-center bg-cover min-h-screen text-white md:mb-44 mb-0">
       <Navbar />
       <MobileNav
         isMenu={isMenu}
