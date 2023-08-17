@@ -1,16 +1,7 @@
 import { BiMenuAltRight } from "react-icons/bi";
 import { IoClose } from "react-icons/io5";
 
-interface MobileNavProps {
-  isMenu: boolean;
-  setIsMenu: React.Dispatch<React.SetStateAction<boolean>>;
-  handleClick: () => void;
-}
-const MobileNav: React.FC<MobileNavProps> = ({
-  isMenu,
-  setIsMenu,
-  handleClick,
-}) => {
+const MobileNav = ({ isMenu, setIsMenu, handleClick }) => {
   return (
     <div className="md:hidden flex text-white w-[90%] m-auto pt-2 justify-between">
       <div className="font-bold text-[20px]">LUNAR SPA</div>

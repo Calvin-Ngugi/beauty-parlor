@@ -5,8 +5,8 @@ import Grid from "./Grid";
 import Blog from "./Blog";
 import Testimonials from "./Testimonials";
 import Contact from "./Contact";
-import { motion } from "framer-motion";
 import Footer from "./Footer";
+import { motion } from "framer-motion";
 
 const MainContainer = () => {
   return (
