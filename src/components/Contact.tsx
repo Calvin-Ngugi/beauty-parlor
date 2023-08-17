@@ -1,9 +1,23 @@
 import Title from "./Title";
 import { BsEnvelopeOpenFill } from "react-icons/bs";
+import { useScroll } from "./useScroll";
+import { motion } from 'framer-motion';
+import { contactAnimation } from "../Animation";
 
 function Contact() {
+  const [element, controls] = useScroll();
   return (
-    <div className="mt-10 2xl:min-h-[37rem] min-h-[30rem]">
+    <motion.div
+      className="mt-10 2xl:min-h-[37rem] min-h-[30rem]"
+      ref={element}
+      variants={contactAnimation}
+      animate={controls}
+      transition={{
+        delay: 0.03,
+        type: "tween",
+        duration: 0.8,
+      }}
+    >
       <h1 className="md:hidden text-purple-800 text-[40px] font-semibold text-center mb-5">
         Contact
       </h1>
@@ -97,7 +111,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

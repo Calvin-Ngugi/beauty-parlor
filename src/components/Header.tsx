@@ -3,6 +3,8 @@ import MobileNav from "./MobileNav";
 import Navbar from "./Navbar";
 import { GiPlayButton } from "react-icons/gi";
 import InfoSection from "./InfoSection";
+import { motion } from 'framer-motion';
+import { homeAnimation} from "../Animation";
 
 const Header = () => {
   const [isMenu, setIsMenu] = useState(false);
@@ -17,7 +19,8 @@ const Header = () => {
         setIsMenu={setIsMenu}
         handleClick={handleClick}
       />
-      <div className="flex flex-col justify-center h-[80vh] w-[80%] m-auto">
+      <motion.div variants={homeAnimation}
+      transition={{ delay: 0.3, duration: 0.6, type: "tween" }} className="flex flex-col justify-center h-[80vh] w-[80%] m-auto">
         <h1 className="text-[60px] font-semibold w-[100px] mb-5">
           Lunar Parlour
         </h1>
@@ -28,7 +31,7 @@ const Header = () => {
           alias
         </p>
         <GiPlayButton className="text-[40px] text-pink-300" />
-      </div>
+      </motion.div>
       <div className="md:block hidden">
         <InfoSection />
       </div>

@@ -1,6 +1,13 @@
+import { motion } from 'framer-motion';
+import { homeInfoAnimation } from "../Animation";
+
 const InfoSection = () => {
   return (
-    <div className="md:absolute md:-bottom-36 md:right-0 bg-fuchsia-600 md:w-[46rem] w-[100%] h-[45%] text-white">
+    <motion.div
+      className="md:absolute md:-bottom-36 md:right-0 bg-fuchsia-600 md:w-[46rem] w-[100%] h-[45%] text-white"
+      variants={homeInfoAnimation}
+      transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
+    >
       <div className="pt-14 pe-10 ps-16 pb-20">
         <div className="grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-y-7">
           <div className="flex flex-col">
@@ -33,7 +40,7 @@ const InfoSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

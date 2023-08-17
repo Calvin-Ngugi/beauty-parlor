@@ -5,11 +5,12 @@ import Grid from "./Grid";
 import Blog from "./Blog";
 import Testimonials from "./Testimonials";
 import Contact from "./Contact";
+import { motion } from "framer-motion";
 import Footer from "./Footer";
 
 const MainContainer = () => {
   return (
-    <div>
+    <motion.div initial="hidden" animate="show">
       <Header />
       <div className="md:hidden block">
         <InfoSection />
@@ -20,7 +21,7 @@ const MainContainer = () => {
       <Testimonials />
       <Contact />
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

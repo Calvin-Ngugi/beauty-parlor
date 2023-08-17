@@ -1,8 +1,12 @@
 import { useState } from "react";
 import { PiFlowerLotus } from "react-icons/pi";
+import { useScroll } from "./useScroll";
+import { motion } from "framer-motion";
+import { testimonialsAnimations } from "../Animation";
 
 const Testimonials = () => {
   const [selected, setSelected] = useState(0);
+  const [element, controls] = useScroll();
   const testimonials = [
     {
       designation: "Salon",
@@ -24,8 +28,17 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="min-h-[50em] bg-slate-900 text-white">
-      <div className="flex flex-col">
+    <div className="min-h-[50em] bg-slate-900 text-white" ref={element}>
+      <motion.div
+        variants={testimonialsAnimations}
+        animate={controls}
+        transition={{
+          delay: 0.03,
+          type: "tween",
+          duration: 0.8,
+        }}
+        className="flex flex-col"
+      >
         {testimonials.map(({ designation, name, review }, index) => {
           return (
             <div
@@ -50,8 +63,17 @@ const Testimonials = () => {
             </div>
           );
         })}
-      </div>
-      <div className="flex gap-6 mt-7 md:w-[30%] w-[50%] mx-auto justify-center">
+      </motion.div>
+      <motion.div
+        variants={testimonialsAnimations}
+        animate={controls}
+        transition={{
+          delay: 0.03,
+          type: "tween",
+          duration: 0.8,
+        }}
+        className="flex gap-6 mt-7 md:w-[30%] w-[50%] mx-auto justify-center"
+      >
         <button
           className={`p-2 rounded-full w-[20px] h-[20px] cursor-pointer${
             selected === 0
@@ -82,7 +104,7 @@ const Testimonials = () => {
             setSelected(2);
           }}
         ></button>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -2,10 +2,24 @@ import Title from "./Title";
 import { FaLeaf, FaHeart } from "react-icons/fa";
 import { PiFlowerLotus } from "react-icons/pi";
 import { GiPlayButton } from "react-icons/gi";
+import { useScroll } from "./useScroll";
+import { motion } from "framer-motion";
+import { servicesAnimations } from "../Animation";
 
 const Services = () => {
+  const [element, controls] = useScroll();
   return (
-    <div className="mt-10">
+    <motion.div
+      className="mt-10 mb-20"
+      ref={element}
+      animate={controls}
+      variants={servicesAnimations}
+      transition={{
+        delay: 0.03,
+        type: "tween",
+        duration: 0.8,
+      }}
+    >
       <h1 className="md:hidden text-purple-800 text-[40px] font-semibold text-center mb-5">
         Services
       </h1>
@@ -49,7 +63,9 @@ const Services = () => {
             <FaHeart className="text-[80px] text-purple-700" />
           </div>
           <small className="font-semibold mt-10 text-[12px]">03</small>
-          <h1 className="text-pink-500 text-[32px] font-bold">Nail Art /Acrylics</h1>
+          <h1 className="text-pink-500 text-[32px] font-bold">
+            Nail Art /Acrylics
+          </h1>
           <p className="mt-12">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
             corrupti iste quaerat vel nemo, officiis eligendi eum placeat
@@ -101,7 +117,7 @@ const Services = () => {
           <GiPlayButton className="text-[40px] text-white mt-10" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

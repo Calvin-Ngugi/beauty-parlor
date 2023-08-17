@@ -1,6 +1,17 @@
+import { useScroll } from "./useScroll";
+import { motion } from 'framer-motion';
+import { navAnimation } from "../Animation";
+
 const Navbar = () => {
+  const [element, controls] = useScroll();
   return (
-    <div className="hidden md:flex justify-between items-center w-[90%] m-auto text-white pt-2">
+    <motion.div
+      ref={element}
+      variants={navAnimation}
+      transition={{ delay: 0.1 }}
+      animate={controls}
+      className="hidden md:flex justify-between items-center w-[90%] m-auto text-white pt-2"
+    >
       <div className="font-bold text-[20px]">LUNAR SPA</div>
       <div>
         <ul className="flex gap-6">
@@ -24,7 +35,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
