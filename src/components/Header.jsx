@@ -13,7 +13,7 @@ const Header = () => {
   };
   return (
     <div className="bg-[url('header-img.jpg')] bg-center bg-cover min-h-screen text-white md:mb-44 mb-0">
-      <img src="header-img" alt="header" className="hidden"/>
+      <img src="header-img.jpg" alt="header" className="hidden"/>
       <Navbar />
       <MobileNav
         isMenu={isMenu}
